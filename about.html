@@ -1,0 +1,76 @@
+<!-- about page -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>m.a.rybak</title>
+		<link href="assets/styles.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="assets/script.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300|Tajawal" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="page-grid">
+			<div id="header">
+				<h1>mariya alexandrovna rybak</h1>
+			</div>
+			<div id="page-container">
+				<div id="nav-bar">
+					<div class="nav-item">
+						<a href="./index.html">home</a>
+					</div>
+					<div class="nav-item">
+						<a href="./about.html"><h2>about me</h2></a>
+					</div>
+					<div class="nav-item">
+						<a href="./do.html">what i do</a>
+					</div>
+					<div class="nav-item">
+						<a href="./contact.html">contact me</a>
+					</div>
+				</div>
+				<div id="page-content">
+					<p>
+						Hi! </br>
+						</br>
+						I'm a graduating senior at UC Berkeley studying Cognitive Science and Linguistics. 
+						</br>
+						</br>
+						I was born in Ukraine and moved to the US when I was 2. I've lived in Arizona, Oklahoma, Florida, California, and (honorarily) New York City.
+						</br>
+						</br>
+						I'm a lover of big dogs (nothing smaller than a Shiba Inu please), boba, and all things aesthetic!
+						</br>
+						</br>
+						I also enjoy hiking, reading, eating, binging TV shows, and weightlifting. I'm on a very long personal quest toward having all rose gold body jewelry and am well known at my local piercing shop (gold vip status customer right here).
+						</br>
+						</br>
+						I've always had a love for art and design despite not having studied it formally in school, and I constantly doodle and like to stalk artists on Instagram. Given my recent exposure to the Web Design Decal at Berkeley, my current hope is to transform that interest into more design-oriented projects.
+						</br>
+						</br>
+						---
+						</br>
+						</br>
+						Feel free to reach out to me with any questions or to just get to know me!
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="lightbulb light">
+			<i class="fas fa-lightbulb fa-2x"></i>
+		</div>
+		<script>
+			if (localStorage.dark == "true") {
+				$(".lightbulb").removeClass("light");
+				$(".lightbulb").addClass("dark");
+				$(".lightbulb").css("color", "#F4F4F4");
+				$("body").css("background-color", "#1E1E1E");
+				$("body").css("color", "#F4F4F4");
+				$("h1").css("color", "#F4F4F4");
+				$("h2").css("color", "#F4F4F4");
+			}
+		</script>
+	</body>
+</html>

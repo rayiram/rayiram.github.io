@@ -1,0 +1,66 @@
+<!-- what i do page -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>m.a.rybak</title>
+		<link href="assets/styles.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="assets/script.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300|Tajawal" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="page-grid">
+			<div id="header">
+				<h1>mariya alexandrovna rybak</h1>
+			</div>
+			<div id="page-container">
+				<div id="nav-bar">
+					<div class="nav-item">
+						<a href="./index.html">home</a>
+					</div>
+					<div class="nav-item">
+						<a href="./about.html">about me</a>
+					</div>
+					<div class="nav-item">
+						<a href="./do.html"><h2>what i do</h2></a>
+					</div>
+					<div class="nav-item">
+						<a href="./contact.html">contact me</a>
+					</div>
+				</div>
+				<div id="page-content">
+					<p>
+						My most recent work has actually been the creation of this website! I'm planning on doing a lot more design and creative work in order to fill this site with more of my projects.
+						</br>
+						</br>
+						---
+						</br>
+						</br>
+						Currently, I'm aiming to finish my last year at UC Berkeley before going to Europe for the summer. </br>
+						</br>I'll be traveling to Italy, France, Spain, St. Petersburg, and Ukraine (my home country)! I'm very excited to be finishing school and taking a break to breathe some fresh air, eat some awesome new food, and see my family.
+						</br>
+						</br>
+						In the long term, I'm still debating pursuing design as a profession versus sticking to the original plan of doing research and going to grad school in cognitive science. We'll see what happens!
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="lightbulb light">
+			<i class="fas fa-lightbulb fa-2x"></i>
+		</div>
+		<script>
+			if (localStorage.dark == "true") {
+				$(".lightbulb").removeClass("light");
+				$(".lightbulb").addClass("dark");
+				$(".lightbulb").css("color", "#F4F4F4");
+				$("body").css("background-color", "#1E1E1E");
+				$("body").css("color", "#F4F4F4");
+				$("h1").css("color", "#F4F4F4");
+				$("h2").css("color", "#F4F4F4");
+			}
+		</script>
+	</body>
+</html>

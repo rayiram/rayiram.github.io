@@ -1,0 +1,61 @@
+<!-- index -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>m.a.rybak</title>
+		<link href="assets/styles.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="assets/script.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300|Tajawal" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id="index-grid">
+			<div id="header">
+				<h1>mariya alexandrovna rybak</h1>
+			</div>
+			<div id="nav-links">
+				<div id="about" class="nav-link">
+					<a href="./about.html"><h2>about me</h2></a>
+				</div>
+				<div id="do" class="nav-link">
+					<a href="./do.html"><h2>what i do</h2></a>
+				</div>
+				<div id="contact" class="nav-link">
+					<a href="./contact.html"><h2>contact me</h2></a>
+				</div>
+			</div>
+			<div id="pics">
+				<div class="pic main-pic">
+					<img src="./assets/img/1.jpg">
+				</div>
+				<div class="pic">
+					<img src="./assets/img/2.jpg" class="nav-pic">
+				</div>
+				<div class="pic">
+					<img src="./assets/img/3.jpg" class="nav-pic">
+				</div>
+				<div class="pic">
+					<img src="./assets/img/4.jpg" class="nav-pic">
+				</div>
+			</div>
+		</div>
+		<div class="lightbulb light">
+			<i class="fas fa-lightbulb fa-2x"></i>
+		</div>
+		<!-- this script lets the page remember if the user clicked the lightbulb to change colors -->
+		<script>
+			if (localStorage.dark == "true") {
+				$(".lightbulb").removeClass("light");
+				$(".lightbulb").addClass("dark");
+				$(".lightbulb").css("color", "#F4F4F4");
+				$("body").css("background-color", "#1E1E1E");
+				$("body").css("color", "#F4F4F4");
+				$("h1").css("color", "#F4F4F4");
+				$("h2").css("color", "#F4F4F4");
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,147 @@
+/*
+Header fonts: Tajawal;
+Body fonts: Roboto;
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Tajawal', sans-serif;
+
+Main background color: #F4F4F4;
+Secondary color: #1E1E1E;
+*/
+
+/********** global styling **********/
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #F4F4F4;
+	transition: all 1s;
+}
+
+h1 {
+	font-family: 'Tajawal', sans-serif;
+	transition: all 1s;
+	letter-spacing: 8px;
+}
+
+h2 {
+	font-family: 'Tajawal', sans-serif;
+	transition: all 1s;
+	letter-spacing: 5px;
+}
+
+a {text-decoration: none;}
+a:link{color:inherit}
+a:active{color:inherit}
+a:visited{color:inherit}
+a:hover{color:inherit; text-decoration: underline;}
+
+/********** index styling **********/
+#index-grid {
+	display: grid;
+	grid-template-areas: "header header"
+						 "nav-links pics";
+	grid-template-columns: 40% 60%;
+	grid-template-rows: 10% 90%;
+}
+
+#header {
+	grid-area: header;
+}
+
+#nav-links {
+	grid-area: nav-links;
+}
+
+.nav-link {
+	padding-bottom: 5%;
+}
+
+#about {
+	margin-left: 50%;
+}
+
+#do {
+	margin-left: 20%;
+}
+
+#contact {
+	margin-left: 35%;
+}
+
+#pics {
+	grid-area: pics;
+}
+
+img {
+	border-radius: 50%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-pic {
+	width: 20px;
+	height: 20px;
+	margin-left: 60%;
+}
+
+.nav-pic {
+	width: 150px;
+	height: 150px;
+	margin-left: 30%;
+}
+
+/********** pages styling **********/
+
+#page-container {
+	display: grid;
+	grid-template-areas: "header header"
+						 "navbar pagecontent";
+	grid-template-columns: 30% 70%;
+	grid-template-rows: 20% 80%;
+}
+
+#header {
+	grid-area: header;
+	margin: 5%;
+}
+
+#page-container {
+	margin-left: 5%;
+	margin-right: 30%;
+}
+
+.nav-bar {
+	grid-area: navbar;
+}
+
+.nav-item {
+	margin: 0;
+	font-family: 'Tajawal', sans-serif;
+}
+
+#page-content {
+	padding-top: 0;
+	margin-left: 10%;
+}
+
+.lightbulb {
+	color: #1E1E1E;
+	bottom: 2%;
+	left: 1%;
+	position: fixed;
+	z-index: 99;
+}
+
+.lightbulb:hover {
+	cursor: pointer;
+	opacity: .8;
+}
+
+#social-links a {
+	margin-right: 5%;
+}
+
+#social-links a:hover {
+	opacity: .5;
+	cursor: pointer;
+}
