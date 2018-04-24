@@ -1,10 +1,24 @@
 $(document).ready(function()  {
+	//picture hover
+	// jQuery Function Number #1
+	$(".pic").hover(function () {
+    	$(this).animate({'opacity':'1'}, 100);
+	},
+	function (){
+	   $(this).animate({'opacity':'.8'}, 100);
+	});
+
 	//toggle alternate color scheme
+	// jQuery Function Number #2
 	$(".lightbulb").click(function() {
 		//change lightblub icon color + layout colors
+		// jQuery Function Number #3
 		if ($(".lightbulb").hasClass("light")) {
+			// jQuery Function Number #4
 			$(".lightbulb").removeClass("light");
+			// jQuery Function Number #5
 			$(".lightbulb").addClass("dark");
+			// jQuery Function Number #6
 			$(".lightbulb").css("color", "#F4F4F4");
 			$("body").css("background-color", "#1E1E1E");
 			$("body").css("color", "#F4F4F4");
