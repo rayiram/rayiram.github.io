@@ -7,6 +7,7 @@ font-family: 'Tajawal', sans-serif;
 
 Main background color: #F4F4F4;
 Secondary color: #1E1E1E;
+Tertiary accent color: #FFDF00;
 */
 
 /********** global styling **********/
@@ -34,7 +35,38 @@ a {text-decoration: none;}
 a:link{color:inherit;}
 a:active{color:inherit;}
 a:visited{color:inherit;}
-a:hover{color:inherit; text-decoration: underline;}
+a:hover {color:inherit;}
+
+/*the nice link underlining, with yellow accent*/
+a {
+	position: relative;
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	transition: .5s;
+	color: #FFDF00;
+}
+a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #FFDF00;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
 
 /********** index styling **********/
 #underlay {
@@ -218,6 +250,9 @@ https://stackoverflow.com/questions/796087/make-a-div-into-a-link */
 	opacity: .5;
 	cursor: pointer;
 }
+
+/******************************************/
+/********** begin media query bs **********/
 
 /* medium-large display */
 @media (max-width: 1000px) {
