@@ -37,4 +37,7 @@ $(document).ready(function()  {
 			localStorage.light = "true";
 		}
 	});
+
+	//trigger animation to fadeOut elements 
+	// on page when switching pages
 });
