@@ -5,15 +5,17 @@ Body fonts: Roboto;
 font-family: 'Roboto', sans-serif;
 font-family: 'Tajawal', sans-serif;
 
-Main background color: #F4F4F4;
-Secondary color: #1E1E1E;
-Tertiary accent color: #FFDF00;
+Light and dark colors invert for light/dark themes
+Light background color: #F4F4F4;
+Dark background color: #1E1E1E;
+Tertiary gold/yellow accent color: #FFDF00;
 */
 
 /********** global styling **********/
 body {
 	font-family: 'Roboto', sans-serif;
-	background-color: #F4F4F4;
+	background-color: #1E1E1E;
+	color: #F4F4F4;
 	transition: all 1s;
 	overflow-x: hidden;
 	font-size: 18px;
@@ -151,6 +153,7 @@ img {
 	float: right;
 	opacity: .8;
 	background-size: cover;
+	transition: .5s;
 }
 
 #pic1 {
@@ -230,7 +233,7 @@ https://stackoverflow.com/questions/796087/make-a-div-into-a-link */
 }
 
 .lightbulb {
-	color: #1E1E1E;
+	color: #F4F4F4;
 	bottom: 2%;
 	left: 1%;
 	position: fixed;

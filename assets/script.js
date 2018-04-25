@@ -24,7 +24,7 @@ $(document).ready(function()  {
 			$("body").css("color", "#F4F4F4");
 			$("h1").css("color", "#F4F4F4");
 			$("h2").css("color", "#F4F4F4");
-			localStorage.dark = "true";
+			localStorage.light = "";
 		}
 		else {
 			$(".lightbulb").removeClass("dark");
@@ -34,7 +34,7 @@ $(document).ready(function()  {
 			$("body").css("color", "#1E1E1E");
 			$("h1").css("color", "#1E1E1E");
 			$("h2").css("color", "#1E1E1E");
-			localStorage.dark = "";
+			localStorage.light = "true";
 		}
 	});
 });

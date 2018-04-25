@@ -62,10 +62,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="lightbulb light">
+		<div class="lightbulb dark">
 			<i class="fas fa-lightbulb fa-2x"></i>
 		</div>
-		<script>
+<!-- 		<script>
 			if (localStorage.dark == "true") {
 				$(".lightbulb").removeClass("light");
 				$(".lightbulb").addClass("dark");
@@ -74,6 +74,17 @@
 				$("body").css("color", "#F4F4F4");
 				$("h1").css("color", "#F4F4F4");
 				$("h2").css("color", "#F4F4F4");
+			}
+		</script> -->
+		<script>
+			if (localStorage.light == "true") {
+				$(".lightbulb").removeClass("dark");
+				$(".lightbulb").addClass("light");
+				$(".lightbulb").css("color", "#1E1E1E");
+				$("body").css("background-color", "#F4F4F4");
+				$("body").css("color", "#1E1E1E");
+				$("h1").css("color", "#1E1E1E");
+				$("h2").css("color", "#1E1E1E");
 			}
 		</script>
 	</body>
