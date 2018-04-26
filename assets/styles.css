@@ -348,11 +348,11 @@ img {
 }
 
 .bg {
-	height: 800px;
-	width: 800px;
+	height: 750px;
+	width: 750px;
 	background-size: cover;
-	border-radius: 800px;
-	right: -30%;
+	border-radius: 750px;
+	right: -25%;
 	position: relative;
 	opacity: .8;
 }
